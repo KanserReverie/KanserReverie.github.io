@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['createinstance_0',['CreateInstance',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html#a4e041de0e9f81aac4b871b830e6f7c1c',1,'NullFrameworkException::MonoSingleton']]]
+  ['attributetests_0',['AttributeTests',['../d5/d90/class_null_framework_exception_1_1_test_1_1_core_1_1_attribute_tests_1_1_attribute_tests.html',1,'NullFrameworkException::Test::Core::AttributeTests']]]
 ];

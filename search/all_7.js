@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['positions_14',['positions',['../d8/da8/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_swipe_input_handler_1_1_swipe.html#a4cd7c872d24516661d63142ad47dc0a3',1,'NullFrameworkException::Mobile::InputHandling::SwipeInputHandler::Swipe']]]
+  ['mobileinputmanager_21',['MobileInputManager',['../d5/dba/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_mobile_input_manager.html',1,'NullFrameworkException::Mobile::InputHandling']]],
+  ['monosingleton_22',['MonoSingleton',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html',1,'NullFrameworkException']]],
+  ['monosingleton_3c_20mobileinputmanager_20_3e_23',['MonoSingleton&lt; MobileInputManager &gt;',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html',1,'NullFrameworkException']]]
 ];

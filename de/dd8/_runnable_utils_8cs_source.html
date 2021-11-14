@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NullFrameworkException: C:/Users/Kieran/Desktop/Games Unity/4Prog-Cl3-Framwork-Jam/NullFrameworkException/Assets/NullFrameworkException/Core/Scripts/RunnableUtils.cs Source File</title>
+<title>NullFrameworkException: C:/Users/Kieran/Desktop/Games Unity/4Prog-Cl3-Framwork-Jam/NullFrameworkException/Assets/NullFrameworkException/Core/RunnableUtils.cs Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_c016f03b251ab314dffe9f5b3d4e9a4c.html">NullFrameworkException</a></li><li class="navelem"><a class="el" href="../../dir_8e9ef12720f1d3765e6a98f9b67e3874.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_580e61c895d3edf8b4839fd5182953ac.html">Scripts</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_c016f03b251ab314dffe9f5b3d4e9a4c.html">NullFrameworkException</a></li><li class="navelem"><a class="el" href="../../dir_8e9ef12720f1d3765e6a98f9b67e3874.html">Core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,78 +77,73 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html">RunnableUtils</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#a974a7e37364567c11ff0673606a5fd0f">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#a974a7e37364567c11ff0673606a5fd0f">Validate&lt;TRunnable&gt;</a>(ref TRunnable _runnable, GameObject _from, <span class="keywordtype">bool</span> _optional)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            where TRunnable : <a class="code" href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">IRunnable</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="comment">// If the passed Runnable is already set, return true</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (_runnable != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="comment">// If the passed runnable isn&#39;t set, attempt to get it from the passed GameObject</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (_runnable == <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                _runnable = _from.GetComponent&lt;TRunnable&gt;();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="comment">// We successfully retrieved the component, so return true</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">if</span> (_runnable != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="comment">// If the passed runnable isn&#39;t set, attempt to get it from the passed GameObject&#39;s children</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> (_runnable == <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                _runnable = _from.GetComponentInChildren&lt;TRunnable&gt;();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="comment">// We successfully retrieved the component, so return true</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">if</span> (_runnable != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (!_optional)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="comment">// The second parameter of Unity&#39;s debug.log is the object associated with the LogMessage</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                Debug.LogException(<span class="keyword">new</span> NullReferenceException($<span class="stringliteral">&quot;Component {typeof(TRunnable).Name} is not present in the hierarchy of gameObject {_from.name}.&quot;</span>), _from);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#af664189433c61be2596e5fbf58cf7106">   62</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#af664189433c61be2596e5fbf58cf7106">Setup&lt;TRunnable&gt;</a>(ref TRunnable _runnable, GameObject _from, <span class="keywordtype">bool</span> _optional, params <span class="keywordtype">object</span>[] _params)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            where TRunnable : <a class="code" href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">IRunnable</a></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="comment">// Validate the component, if we can, set it up and return true</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (Validate(ref _runnable, _from, _optional))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                _runnable.Setup(_params);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">// We failed to validate the component, so return false</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#ae6395de6352a9d9f38a4f0d13dd5a6b0">   82</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#ae6395de6352a9d9f38a4f0d13dd5a6b0">Run&lt;TRunnable&gt;</a>(ref TRunnable _runnable, GameObject _from, <span class="keywordtype">bool</span> _optional, params <span class="keywordtype">object</span>[] _params)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            where TRunnable : <a class="code" href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">IRunnable</a></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">// Validate the component in case we didn&#39;t do it earlier</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (Validate(ref _runnable, _from, _optional))</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                _runnable.Run(_params);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#aa53f3e3ac5a8080f87f09142c1955d6a">   14</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#aa53f3e3ac5a8080f87f09142c1955d6a">Validate&lt;TRunnable&gt;</a>(ref TRunnable _runnable, GameObject _from) </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            where TRunnable : <a class="code" href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">IRunnable</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="comment">// If the passed Runnable is already set, return true</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">if</span>(_runnable != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="comment">// If the passed runnable isn&#39;t set, attempt to get it from the passed GameObject</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">if</span>(_runnable == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                _runnable = _from.GetComponent&lt;TRunnable&gt;();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="comment">// We successfully retrieved the component, so return true</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">if</span>(_runnable != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="comment">// If the passed runnable isn&#39;t set, attempt to get it from the passed GameObject&#39;s children</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">if</span>(_runnable == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                _runnable = _from.GetComponentInChildren&lt;TRunnable&gt;();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="comment">// We successfully retrieved the component, so return true</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span>(_runnable != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            } </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#a89a26b75a44ce51025acee31b4684864">   56</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#a89a26b75a44ce51025acee31b4684864">Setup&lt;TRunnable&gt;</a>(ref TRunnable _runnable, GameObject _from, params <span class="keywordtype">object</span>[] _params)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            where TRunnable : <a class="code" href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">IRunnable</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="comment">// Validate the component, if we can, set it up and return true</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span>(Validate(ref _runnable, _from))</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                _runnable.Setup(_params);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="comment">// We failed to validate the component, so return false</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#aeea226c541975763f3df21098cc91325">   76</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#aeea226c541975763f3df21098cc91325">Run&lt;TRunnable&gt;</a>(ref TRunnable _runnable, GameObject _from, params <span class="keywordtype">object</span>[] _params) </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            where TRunnable : <a class="code" href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">IRunnable</a></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">// Validate the component in case we didn&#39;t do it earlier</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span>(Validate(ref _runnable, _from))</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                _runnable.Run(_params);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html">NullFrameworkException.RunnableUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00007">RunnableUtils.cs:8</a></div></div>
-<div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html_a974a7e37364567c11ff0673606a5fd0f"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#a974a7e37364567c11ff0673606a5fd0f">NullFrameworkException.RunnableUtils.Validate&lt; TRunnable &gt;</a></div><div class="ttdeci">static bool Validate&lt; TRunnable &gt;(ref TRunnable _runnable, GameObject _from, bool _optional)</div><div class="ttdoc">Attempts to retrieve the runnable behaviour from the passed gameObject or its children.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00015">RunnableUtils.cs:15</a></div></div>
-<div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html_ae6395de6352a9d9f38a4f0d13dd5a6b0"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#ae6395de6352a9d9f38a4f0d13dd5a6b0">NullFrameworkException.RunnableUtils.Run&lt; TRunnable &gt;</a></div><div class="ttdeci">static void Run&lt; TRunnable &gt;(ref TRunnable _runnable, GameObject _from, bool _optional, params object[] _params)</div><div class="ttdoc">Attempts to validate the runnable and if successful, run it using the information provided.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00082">RunnableUtils.cs:82</a></div></div>
-<div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html_af664189433c61be2596e5fbf58cf7106"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#af664189433c61be2596e5fbf58cf7106">NullFrameworkException.RunnableUtils.Setup&lt; TRunnable &gt;</a></div><div class="ttdeci">static bool Setup&lt; TRunnable &gt;(ref TRunnable _runnable, GameObject _from, bool _optional, params object[] _params)</div><div class="ttdoc">Attempts to validate then setup the IRunnable, returning whether or not it succeeded.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00062">RunnableUtils.cs:62</a></div></div>
+<div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html_a89a26b75a44ce51025acee31b4684864"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#a89a26b75a44ce51025acee31b4684864">NullFrameworkException.RunnableUtils.Setup&lt; TRunnable &gt;</a></div><div class="ttdeci">static bool Setup&lt; TRunnable &gt;(ref TRunnable _runnable, GameObject _from, params object[] _params)</div><div class="ttdoc">Attempts to validate then setup the IRunnable, returning whether or not it succeeded.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00056">RunnableUtils.cs:56</a></div></div>
+<div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html_aa53f3e3ac5a8080f87f09142c1955d6a"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#aa53f3e3ac5a8080f87f09142c1955d6a">NullFrameworkException.RunnableUtils.Validate&lt; TRunnable &gt;</a></div><div class="ttdeci">static bool Validate&lt; TRunnable &gt;(ref TRunnable _runnable, GameObject _from)</div><div class="ttdoc">Attempts to retrieve the runnable behaviour from the passed gameObject or its children.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00014">RunnableUtils.cs:14</a></div></div>
+<div class="ttc" id="aclass_null_framework_exception_1_1_runnable_utils_html_aeea226c541975763f3df21098cc91325"><div class="ttname"><a href="../../d9/d99/class_null_framework_exception_1_1_runnable_utils.html#aeea226c541975763f3df21098cc91325">NullFrameworkException.RunnableUtils.Run&lt; TRunnable &gt;</a></div><div class="ttdeci">static void Run&lt; TRunnable &gt;(ref TRunnable _runnable, GameObject _from, params object[] _params)</div><div class="ttdoc">Attempts to validate the runnable and if successful, run it using the information provided.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/_runnable_utils_8cs_source.html#l00076">RunnableUtils.cs:76</a></div></div>
 <div class="ttc" id="ainterface_null_framework_exception_1_1_i_runnable_html"><div class="ttname"><a href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">NullFrameworkException.IRunnable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/_i_runnable_8cs_source.html#l00003">IRunnable.cs:4</a></div></div>
-<div class="ttc" id="anamespace_null_framework_exception_html"><div class="ttname"><a href="../../da/d69/namespace_null_framework_exception.html">NullFrameworkException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/_i_runnable_8cs_source.html#l00001">IRunnable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_null_framework_exception_html"><div class="ttname"><a href="../../da/d69/namespace_null_framework_exception.html">NullFrameworkException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1c/_spawner_8cs_source.html#l00003">Spawner.cs:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

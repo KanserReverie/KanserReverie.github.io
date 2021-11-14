@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['swipe_30',['Swipe',['../d8/da8/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_swipe_input_handler_1_1_swipe.html',1,'NullFrameworkException::Mobile::InputHandling::SwipeInputHandler']]],
-  ['swipeinputhandler_31',['SwipeInputHandler',['../df/d6d/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_swipe_input_handler.html',1,'NullFrameworkException::Mobile::InputHandling']]]
+  ['joystickinputhandler_65',['JoystickInputHandler',['../d6/de6/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_joystick_input_handler.html',1,'NullFrameworkException::Mobile::InputHandling']]],
+  ['joysticktest_66',['JoystickTest',['../db/d5f/class_null_framework_exception_1_1_test_1_1_mobile_1_1_joystick_test.html',1,'NullFrameworkException::Test::Mobile']]]
 ];

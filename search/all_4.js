@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['joystickinputhandler_7',['JoystickInputHandler',['../d6/de6/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_joystick_input_handler.html',1,'NullFrameworkException::Mobile::InputHandling']]]
+  ['initialposition_15',['initialPosition',['../d8/da8/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_swipe_input_handler_1_1_swipe.html#a5253cc703855a3138a58b0b566ca8255',1,'NullFrameworkException::Mobile::InputHandling::SwipeInputHandler::Swipe']]],
+  ['irunnable_16',['IRunnable',['../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html',1,'NullFrameworkException']]],
+  ['issingletonvalid_17',['IsSingletonValid',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html#a554e3f6adec3c224a530319bccb81d8e',1,'NullFrameworkException::MonoSingleton']]]
 ];

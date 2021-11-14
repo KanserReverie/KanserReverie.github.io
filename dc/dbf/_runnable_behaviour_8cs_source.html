@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NullFrameworkException: C:/Users/Kieran/Desktop/Games Unity/4Prog-Cl3-Framwork-Jam/NullFrameworkException/Assets/NullFrameworkException/Core/Scripts/RunnableBehaviour.cs Source File</title>
+<title>NullFrameworkException: C:/Users/Kieran/Desktop/Games Unity/4Prog-Cl3-Framwork-Jam/NullFrameworkException/Assets/NullFrameworkException/Core/RunnableBehaviour.cs Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_c016f03b251ab314dffe9f5b3d4e9a4c.html">NullFrameworkException</a></li><li class="navelem"><a class="el" href="../../dir_8e9ef12720f1d3765e6a98f9b67e3874.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_580e61c895d3edf8b4839fd5182953ac.html">Scripts</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_c016f03b251ab314dffe9f5b3d4e9a4c.html">NullFrameworkException</a></li><li class="navelem"><a class="el" href="../../dir_8e9ef12720f1d3765e6a98f9b67e3874.html">Core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Setup(params <span class="keywordtype">object</span>[] _params)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="comment">// If the runnable is already setup, throw an exception to warn the developer</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">if</span> (isSetup)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">if</span>(isSetup)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException($<span class="stringliteral">&quot;GameObject {gameObject.name} already setup!&quot;</span>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            }</div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Run(params <span class="keywordtype">object</span>[] _params)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="comment">// If the runnable is enabled and setup, run its OnRun function with the passed values</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (Enabled &amp;&amp; isSetup)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span>(Enabled &amp;&amp; isSetup)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                OnRun(_params);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
@@ -109,7 +109,7 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="ttc" id="aclass_null_framework_exception_1_1_runnable_behaviour_html"><div class="ttname"><a href="../../dd/d99/class_null_framework_exception_1_1_runnable_behaviour.html">NullFrameworkException.RunnableBehaviour</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dbf/_runnable_behaviour_8cs_source.html#l00007">RunnableBehaviour.cs:8</a></div></div>
 <div class="ttc" id="ainterface_null_framework_exception_1_1_i_runnable_html"><div class="ttname"><a href="../../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html">NullFrameworkException.IRunnable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/_i_runnable_8cs_source.html#l00003">IRunnable.cs:4</a></div></div>
-<div class="ttc" id="anamespace_null_framework_exception_html"><div class="ttname"><a href="../../da/d69/namespace_null_framework_exception.html">NullFrameworkException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/_i_runnable_8cs_source.html#l00001">IRunnable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_null_framework_exception_html"><div class="ttname"><a href="../../da/d69/namespace_null_framework_exception.html">NullFrameworkException</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1c/_spawner_8cs_source.html#l00003">Spawner.cs:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
