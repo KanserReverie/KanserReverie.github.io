@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['joystickinputhandler_65',['JoystickInputHandler',['../d6/de6/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_joystick_input_handler.html',1,'NullFrameworkException::Mobile::InputHandling']]],
-  ['joysticktest_66',['JoystickTest',['../db/d5f/class_null_framework_exception_1_1_test_1_1_mobile_1_1_joystick_test.html',1,'NullFrameworkException::Test::Mobile']]]
+  ['gyroinputhandler_127',['GyroInputHandler',['../d7/ddb/class_null_framework_exception_1_1_mobile_1_1_gyro_input_handler.html',1,'NullFrameworkException::Mobile']]],
+  ['gyroscopestate_128',['GyroscopeState',['../dd/d77/class_null_framework_exception_1_1_mobile_1_1_gyro_input_handler_1_1_gyroscope_state.html',1,'NullFrameworkException::Mobile::GyroInputHandler']]],
+  ['gyrotest_129',['GyroTest',['../d3/d32/class_null_framework_exception_1_1_test_1_1_mobile_1_1_gyro_test.html',1,'NullFrameworkException::Test::Mobile']]]
 ];

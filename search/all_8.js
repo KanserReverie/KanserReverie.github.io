@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['ai_24',['AI',['../df/d69/namespace_null_framework_exception_1_1_a_i.html',1,'NullFrameworkException.AI'],['../dc/d9e/namespace_null_framework_exception_1_1_editor_1_1_a_i.html',1,'NullFrameworkException.Editor.AI']]],
-  ['attributetests_25',['AttributeTests',['../de/d86/namespace_null_framework_exception_1_1_test_1_1_core_1_1_attribute_tests.html',1,'NullFrameworkException::Test::Core']]],
-  ['core_26',['Core',['../dc/ddb/namespace_null_framework_exception_1_1_test_1_1_core.html',1,'NullFrameworkException::Test']]],
-  ['editor_27',['Editor',['../d8/dbc/namespace_null_framework_exception_1_1_editor.html',1,'NullFrameworkException']]],
-  ['inputhandling_28',['InputHandling',['../d0/d14/namespace_null_framework_exception_1_1_mobile_1_1_input_handling.html',1,'NullFrameworkException::Mobile']]],
-  ['mobile_29',['Mobile',['../df/d95/namespace_null_framework_exception_1_1_mobile.html',1,'NullFrameworkException.Mobile'],['../db/d89/namespace_null_framework_exception_1_1_test_1_1_mobile.html',1,'NullFrameworkException.Test.Mobile']]],
-  ['nullframeworkexception_30',['NullFrameworkException',['../da/d69/namespace_null_framework_exception.html',1,'']]],
-  ['runnabletest_31',['RunnableTest',['../d4/d58/namespace_null_framework_exception_1_1_test_1_1_core_1_1_runnable_test.html',1,'NullFrameworkException::Test::Core']]],
-  ['scenedragndroptest_32',['SceneDragNDropTest',['../dd/d46/namespace_null_framework_exception_1_1_test_1_1_core_1_1_scene_drag_n_drop_test.html',1,'NullFrameworkException::Test::Core']]],
-  ['test_33',['Test',['../d8/d17/namespace_null_framework_exception_1_1_test.html',1,'NullFrameworkException']]]
+  ['initialposition_31',['initialPosition',['../d8/da8/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_swipe_input_handler_1_1_swipe.html#a5253cc703855a3138a58b0b566ca8255',1,'NullFrameworkException::Mobile::InputHandling::SwipeInputHandler::Swipe']]],
+  ['irunnable_32',['IRunnable',['../d3/dd0/interface_null_framework_exception_1_1_i_runnable.html',1,'NullFrameworkException']]],
+  ['isgrounded_33',['isGrounded',['../d9/d9d/class_null_framework_exception_1_1_character_movement_1_1_rigidbody3d_1_1_player_movement_rigidbody3d.html#a3b0282542e87127ac733de4200a59c79',1,'NullFrameworkException::CharacterMovement::Rigidbody3d::PlayerMovementRigidbody3d']]],
+  ['issingletonvalid_34',['IsSingletonValid',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html#a554e3f6adec3c224a530319bccb81d8e',1,'NullFrameworkException::MonoSingleton']]]
 ];

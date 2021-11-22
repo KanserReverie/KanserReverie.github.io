@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadablename_107',['LoadableName',['../df/da9/class_null_framework_exception_1_1_scene_field_attribute.html#ac2573cc5bc22c5abaa1b72bf0eb91587',1,'NullFrameworkException::SceneFieldAttribute']]]
+  ['issingletonvalid_190',['IsSingletonValid',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html#a554e3f6adec3c224a530319bccb81d8e',1,'NullFrameworkException::MonoSingleton']]]
 ];

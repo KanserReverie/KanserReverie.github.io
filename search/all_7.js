@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['mobileinputmanager_21',['MobileInputManager',['../d5/dba/class_null_framework_exception_1_1_mobile_1_1_input_handling_1_1_mobile_input_manager.html',1,'NullFrameworkException::Mobile::InputHandling']]],
-  ['monosingleton_22',['MonoSingleton',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html',1,'NullFrameworkException']]],
-  ['monosingleton_3c_20mobileinputmanager_20_3e_23',['MonoSingleton&lt; MobileInputManager &gt;',['../de/d64/class_null_framework_exception_1_1_mono_singleton.html',1,'NullFrameworkException']]]
+  ['horizontalmovement_30',['horizontalMovement',['../d9/d9d/class_null_framework_exception_1_1_character_movement_1_1_rigidbody3d_1_1_player_movement_rigidbody3d.html#a0bfa3d0f4bd1ec1bbcbbcf58c9d9490e',1,'NullFrameworkException::CharacterMovement::Rigidbody3d::PlayerMovementRigidbody3d']]]
 ];
